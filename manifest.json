@@ -1,0 +1,9 @@
+{
+    "name": "Ruan & Isabella",
+    "short_name": "Coração",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0b0b10",
+    "theme_color": "#ff2d55"
+  }
+  

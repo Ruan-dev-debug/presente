@@ -1,0 +1,161 @@
+:root{
+    --bg:#0b0b10;
+    --card:#12121a;
+    --accent:#ff2d55;
+    --accent2:#ff7aa2;
+    --text:#f7f7fb;
+    --muted:#b6b6c8;
+  }
+  
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: radial-gradient(1200px 700px at 50% -10%, #2a1230 0%, var(--bg) 60%);
+    color: var(--text);
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 20px;
+  }
+  
+  .wrap{ width: min(520px, 100%); }
+  
+  .top{ text-align:center; margin-bottom:14px; }
+  .top h1{ margin:0; font-size: 28px; letter-spacing: .2px; }
+  .sub{ margin:6px 0 0; color: var(--muted); font-size: 14px; }
+  
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 22px;
+    padding: 18px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  }
+  
+  .heart{
+    width: min(360px, 92vw);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    position: relative;
+  
+    background-image: url("assets/imagem.jpg");
+    background-size: cover;
+    background-position: 50% 35%; /* ajusta o enquadramento */
+  
+    -webkit-mask-image: url("assets/heart-mask.svg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  
+    mask-image: url("assets/heart-mask.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  
+  .tiles{
+    position:absolute;
+    inset:0;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .tile{
+    background: rgba(255, 0, 0, 2);            /* bem escuro */
+    border: 1px solid rgba(255,255,255,.10);
+    backdrop-filter: blur(3px);
+    transition: opacity .35s ease, transform .35s ease;
+    opacity: 1;
+  }
+  
+  
+  .tile.open{
+    opacity: 0;
+    transform: scale(1.03);
+    pointer-events:none;
+  }
+  
+  .info{ margin-top: 14px; text-align:center; }
+  .counter{ font-weight: 600; margin-bottom: 8px; }
+  .quote{ color: var(--muted); min-height: 20px; font-size: 14px; }
+  
+  .actions{
+    display:flex;
+    gap: 10px;
+    justify-content:center;
+    margin-top: 16px;
+  }
+  
+  .btn{
+    border:none;
+    background: var(--accent);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-weight: 700;
+    cursor:pointer;
+    box-shadow: 0 10px 30px rgba(255,45,85,.25);
+  }
+  .btn:active{ transform: translateY(1px) scale(0.99); }
+  
+  .btn.ghost{
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.18);
+    color: var(--text);
+    box-shadow: none;
+  }
+  
+  .final{ margin-top: 14px; text-align:center; }
+  .finalText{ margin: 0; font-size: 16px; font-weight: 800; color: #fff; }
+  
+  .foot{ text-align:center; margin-top: 14px; color: var(--muted); }
+  
+  /* --- Cascata de corações --- */
+.heart-rain{
+  position: fixed;
+  top: -10vh;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.rain-heart{
+  position: absolute;
+  top: -10vh;
+  font-size: 18px;
+  opacity: .9;
+  animation: fall linear forwards;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(130vh) rotate(360deg);
+    opacity: 0.1;
+  }
+}
+
+/* --- Corações fixos no background --- */
+.bg-heart{
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  opacity: .12;              /* bem sutil no fundo */
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(0.2px);
+  user-select: none;
+}
+
+
+.wrap{ width: min(520px, 100%); position: relative; z-index: 2; }
