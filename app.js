@@ -75,8 +75,8 @@ const quotes = [
   "Do barulho que faz quando dorme.",
   "da forma do seu labio.",
   "Todos esses detalhes.",
-  "Estão gravados.",
-  "Em toda minha mente.",
+  "Estão gravados em minha mente .",
+  "A 64 dia atraz eu comecei a sentir algo tão forte por você que ali eu percebi que não ia demora muito para você tomar conta do meu pensamento e graças a deus você teve reciprocidade e tambem quis viver uma vida comigo sei que você não gosta mas ISABELLA VOCÊ E O GRANDE AMOR DA MINHA VIDA SEMPRE VOU TENTAR DEIXA BEM CLARO TODO ESSE AMOR QUE SINTO POR VOCÊ TE AMO MEU AMOR ❤️❤️❤️.",
   "A 64 dia atraz eu comecei a sentir algo tão forte por você que ali eu percebi que não ia demora muito para você tomar conta do meu pensamento e graças a deus você teve reciprocidade e tambem quis viver uma vida comigo sei que você não gosta mas ISABELLA VOCÊ E O GRANDE AMOR DA MINHA VIDA SEMPRE VOU TENTAR DEIXA BEM CLARO TODO ESSE AMOR QUE SINTO POR VOCÊ TE AMO MEU AMOR ❤️❤️❤️.",
 ];
 
